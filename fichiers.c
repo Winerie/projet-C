@@ -8,7 +8,6 @@
 
 FILE* initFichier(char* nomFichier )
 	{
-	
 	FILE* pf=fopen(nomFichier,"r");
 	if(pf==NULL)
 	{
