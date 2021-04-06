@@ -1,9 +1,3 @@
-/************************************************************************
-* TITLE: fichiers.h             
-* AUTHOR: Justine LE VEN et Tristan LE COZ            
-* DESCRIPTION:       
-* VERSION: 1.0 
-************************************************************************/
 #ifndef FICHIERS_H
 #define FICHIERS_H
 #include <stdio.h>
