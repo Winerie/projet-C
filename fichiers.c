@@ -1,24 +1,16 @@
-/************************************************************************
-* TITLE: fichiers.c             
-* AUTHOR: Justine LE VEN et Tristan LE COZ            
-* DESCRIPTION:       
-* VERSION: 1.0 
-************************************************************************/
 #include "fichiers.h"
 
-FILE* initFichier(char* nomFichier )
-	{
+FILE* initFichier(char* nomFichier ){
+	
 	FILE* pf=fopen(nomFichier,"r");
-	if(pf==NULL)
-	{
+	if(pf==NULL){
 		printf("dans fichiers.c : erreur ouverture fichier %s\n",nomFichier);
 		exit(EXIT_FAILURE);
 	}
 	return pf;
 }
 
-absorp lireFichier(FILE* pf, int* etat)
-{
+absorp lireFichier(FILE* pf, int* etat){ 
 	absorp myAbsorp;
 	char x,y;
 	int a=0,b=0,c=0,d=0;
@@ -30,10 +22,7 @@ absorp lireFichier(FILE* pf, int* etat)
 	return myAbsorp;
 }
 
-void finFichier(FILE* pf)
-{
+void finFichier(FILE* pf){
 	fclose(pf);
-
-
 }
 
